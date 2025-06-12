@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISG Chat - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="login-page">
+    <div class="container-fluid h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-4">
+                <div class="login-card">
+                    <div class="text-center mb-4">
+                        <img src="images/isg-logo.png" alt="ISG Logo" class="company-logo">
+                        <h2 class="mt-3">ISG Chat</h2>
+                        <p class="text-muted">Internal Communication Platform</p>
+                    </div>
+                    
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" id="language">
+                                <option value="en">English</option>
+                                <option value="ar">العربية</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </button>
+                    </form>
+                    
+                    <div class="mt-4">
+                        <small class="text-muted">
+                            <strong>Demo Accounts:</strong><br>
+                            ismail.m@isg-egy.com / 123456<br>
+                            sanaa.m@isg-egy.com / 123456<br>
+                            ahmed.b@isg-egy.com / 123456<br>
+                            heba.n@isg-egy.com / 123456
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-footer">
+            Developed by <strong>Eng.Heba & Eng.Abdulrahim</strong> © 2024 ISG
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
